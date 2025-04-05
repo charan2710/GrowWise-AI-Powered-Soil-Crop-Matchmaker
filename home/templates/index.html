@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant recommnder</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}" class="active">Home</a></li>
+            <li><a href="{% url 'plant_recommender' %}">Plant Recommender</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Full-Screen Background Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to Nature Harmony</h1>
+            <p>Discover the beauty of nature and find the best plants for your environment.</p>
+        </div>
+    </section>
+
+</body>
+</html>
